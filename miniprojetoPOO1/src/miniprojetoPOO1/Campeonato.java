@@ -68,7 +68,7 @@ public class Campeonato {
         String classificacao = "|";
         for (int i = 0; i < clubes.size(); i++) {
             Clube clube = clubes.get(i);
-            String classLine =(i+1)+"° "+clube.nome + " - Pontos: " + clube.pontos;
+            String classLine =(i+1)+"° "+clube.nome + " - Pontos: " + clube.pontos +" Saldo de gols "+clube.saldoGols;
             classificacao += classLine+"|";
             System.out.println(classLine);
         }
